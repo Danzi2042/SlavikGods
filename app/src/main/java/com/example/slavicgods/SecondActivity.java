@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
-    // создание коллекции контейнера для данных класса Animal
+    // создание коллекции контейнера для данных класса God
     List<God> gods = new ArrayList<God>();
 
     @Override
@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity {
 
     // метод setInitialData() устанавливает начальный набор данных
     private void setInitialData() {
-        // добавление в контейнер animals объектов сущности Animal
+        // добавление в контейнер animals объектов сущности God
        gods.add( new God("Перун", "боггромовержец в славянской мифологии, покровитель князя и дружины в древнерусском языческом пантеоне. Бог Перун всегда оказывал поддержку тем, кто борется за правое дело, и презирал тех, кто нарушил закон.",
                 R.drawable.perun));
         gods.add( new God("Сварог", "верховный бог восточных славян, небесный огонь, бог огня. Сварог – бог-хозяин, ему выпала честь сотворить священный огонь. ",
