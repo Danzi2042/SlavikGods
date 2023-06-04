@@ -23,14 +23,14 @@ public class GodAdapter extends RecyclerView.Adapter<GodAdapter.ViewHolder> {
         this.gods = gods;
     }
 
-    // метод onCreateViewHolder() возвращает объект ViewHolder(), который будет хранить данные по одному объекту Animal
+    // метод onCreateViewHolder() возвращает объект ViewHolder(), который будет хранить данные по одному объекту God
     @Override
     public GodAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.list_item, parent, false); // трансформация layout-файла во View-элемент
         return new ViewHolder(view);
     }
 
-    // метод onBindViewHolder() выполняет привязку объекта ViewHolder к объекту Animal по определенной позиции
+    // метод onBindViewHolder() выполняет привязку объекта ViewHolder к объекту God по определенной позиции
     @Override
     public void onBindViewHolder(GodAdapter.ViewHolder holder, int position) {
         God god = gods.get(position);
